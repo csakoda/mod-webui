@@ -43,7 +43,4 @@ class GraphsMetaModule(MetaModule):
                 
             logger.debug("[WebUI] Got graphs: %s", uris)
 
-        for uri in uris:
-            uri['img_src'] = '/graph?url=' + urllib.quote(uri['img_src'])
-
         return uris
